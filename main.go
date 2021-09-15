@@ -48,7 +48,7 @@ func main() {
 			printError(errReadingInput)
 		}
 
-		strings.ToUpper(strings.TrimSpace(shouldConvertAgain))
+		shouldConvertAgain = strings.ToUpper(strings.TrimSpace(shouldConvertAgain))
 
 		if shouldConvertAgain != "Y" {
 			fmt.Println("Good bye!")
